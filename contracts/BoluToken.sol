@@ -5,7 +5,7 @@ import "erc721a/contracts/ERC721A.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract BoluToken is ERC721A, Ownable {
-    constructor() Ownable(msg.sender) ERC721A("SamToken", "STN") {}
+    constructor() Ownable(msg.sender) ERC721A("BoluToken", "BTN") {}
 
     uint256 private limit = 5;
     string[] private descriptions = [
@@ -18,13 +18,13 @@ contract BoluToken is ERC721A, Ownable {
     mapping(uint256 => string) private _tokenURIs;
 
     function _baseURI() internal pure override returns (string memory) {
-        return "QmXXctBGz25FbKUuPDXaZLSkdnrcDuA66rLFz9vE4WZRaF";
+        return "QmZMcWPjGipqd4ij4LdRWZPmbGKYvW4vrAz4K6QQN9Ry45";
     }
 
     function tokenURI(
         uint256 tokenId
     ) public view virtual override returns (string memory) {
-        if (!_exists(tokenId)) revert("No Token Exists");
+        if (!_exists(tokenId)) revert("Token does not texis");
 
         string memory baseURI = _baseURI();
         string memory tokenIdStr = _toString(tokenId);

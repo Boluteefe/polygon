@@ -7,7 +7,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const token = await hre.ethers.deployContract("SamToken");
+  const token = await hre.ethers.deployContract("BoluToken");
 
   console.log("Contract address:", await token.getAddress());
   // 0xF2Ff8d42fe9753C40Fa51679A2cecD667B2f4D90

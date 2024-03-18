@@ -8,7 +8,7 @@ This repository serves as a practical guide on creating NFTs based on ERC721 sta
 
 - **Solidity:** Used for writing the BoluToken ERC721 contract.
 - **Hardhat:** A development environment for compiling, deploying, and testing smart contracts.
-- **Pinata:** A decentralized storage system for hosting NFT images.
+- **Pinata (IPFS):** A decentralized storage system for hosting NFT images.
 - **FxPortal:** Facilitates interoperability between blockchain networks, allowing asset bridging between Ethereum and Polygon.
 - **Gencraft:** An AI image generator utilized to create NFT images from textual descriptions.
 
@@ -25,8 +25,6 @@ This repository serves as a practical guide on creating NFTs based on ERC721 sta
 3. **Approve and Deposit:** Use `npx hardhat run scripts/approveDeposit.js --network goerli` to approve and deposit NFTs to the Polygon network via the FxERC721RootTunnel contract.
 
 4. **Wait for Completion:** Allow 20-30 minutes for tokens to appear in your Polygon account after depositing them. Learn more about FxPortal [here](https://wiki.polygon.technology/docs/pos/design/bridge/l1-l2-communication/fx-portal/#how-does-it-work).
-
-5. **Check Balance:** Verify successful bridging of NFTs with `npx hardhat run scripts/getBalance.js --network mumbai`.
 
 ---
 

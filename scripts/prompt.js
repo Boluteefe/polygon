@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const contractJSON = require("../artifacts/contracts/SamToken.sol/SamToken.json");
+const contractJSON = require("../artifacts/contracts/BoluToken.sol/BoluToken.json");
 require("dotenv").config();
 
 const contractAddress = "0xF2Ff8d42fe9753C40Fa51679A2cecD667B2f4D90";
