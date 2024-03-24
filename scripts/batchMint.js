@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 const contractJSON = require("../artifacts/contracts/BoluToken.sol/BoluToken.json");
 
-const contractAddress = "0xe77c6C0B7a8c7726c5BD25e53b4471BFA3e218E6";
+const contractAddress = "0xc4727A387Ca9f0e17d333b46aBA91Bec24bB0166";
 const contractABI = contractJSON.abi;
 const walletAddress = "0x9434E0a9878a1bE87918762a846dBEa7B333B5DE";
 let noOfNFTs = 5;

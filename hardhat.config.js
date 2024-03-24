@@ -10,6 +10,11 @@ module.exports = {
       // @ts-ignore
       accounts: [process.env.PRIVATEKEY],
     },
+    goerli: {
+      url: process.env.SEPOLIARPC,
+      // @ts-ignore
+      accounts: [process.env.PRIVATEKEY],
+    },
     mumbai: {
       url: process.env.MUMBAIRPC,
       accounts: [process.env.PRIVATEKEY],

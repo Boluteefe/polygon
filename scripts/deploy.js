@@ -10,7 +10,7 @@ async function main() {
   const token = await hre.ethers.deployContract("BoluToken");
 
   console.log("Contract address:", await token.getAddress());
-  // 0xe77c6C0B7a8c7726c5BD25e53b4471BFA3e218E6
+  // 0xc4727A387Ca9f0e17d333b46aBA91Bec24bB0166
 }
 
 // We recommend this pattern to be able to use async/await everywhere
